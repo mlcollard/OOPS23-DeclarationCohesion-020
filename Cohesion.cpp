@@ -7,6 +7,12 @@
 #include <vector>
 #include <string>
 
+struct GradeItem {
+    std::vector<std::string> names;
+    std::vector<int> scores;
+    double average;
+};
+
 int main() {
 
     // variable ordering & style #1
@@ -44,6 +50,13 @@ int main() {
         std::vector<std::string> testNames;
         std::vector<int> tests;
         double testAverage;
+    }
+
+    // variable ordering & style #4
+    // @cohesion Informational
+    {
+        GradeItem exercises;
+        GradeItem tests;
     }
 
     return 0;
