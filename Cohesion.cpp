@@ -32,5 +32,19 @@ int main() {
         double exerciseAverage, testAverage;
     }
 
+    // variable ordering & style #3
+    // @cohesion Informational
+    {
+        // exercises
+        std::vector<std::string> exerciseNames;
+        std::vector<int> exercises;
+        double exerciseAverage;
+
+        // tests
+        std::vector<std::string> testNames;
+        std::vector<int> tests;
+        double testAverage;
+    }
+
     return 0;
 }
